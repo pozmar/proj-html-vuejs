@@ -24,10 +24,14 @@
   color: #79b27b;
   border-radius: 50px;
 }
-.nav{
+.container-nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.nav{
+  background: rgba(0, 0, 0, 0.58);
+  height: 100px;
 }
 .presentation{
   color: white;
