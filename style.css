@@ -1,0 +1,128 @@
+.first{
+  background-color: #484848;
+}
+.top-info{
+  height: 50px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.navigation{
+  background-image: url("img/homepage-hero-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+.navigation img{
+  width: 250px;
+  height: 50px;
+}
+.button{
+  display: inline-block;
+  padding: 20px;
+  background-color: white;
+  color: #79b27b;
+  border-radius: 50px;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.presentation{
+  color: white;
+  margin-top: 100px;
+}
+.forms{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+  position: relative;
+}
+.description{
+  width: 50%;
+  margin-right: 10px;
+}
+.form{
+  width: 50%;
+}
+.box{
+  position: absolute;
+  top: -20%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 1px 12px 12px 1px lightgrey;
+}
+.phone-number{
+  height: 100px;
+  background-image: url("img/horizontal-cta-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.flex-center{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.phone-number{
+  color: white;
+}
+.central{
+  background-image: url("img/promise-background.jpg");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.small-box{
+  margin-left: 25px;
+  text-align: center;
+  display: inline-block;
+  margin-top: 30px;
+}
+.small-box img{
+  width: 150px;
+  height: 150px;
+}
+.box-floating{
+  position: absolute;
+  top: -10%;
+  left: 0;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 1px 12px 12px 1px lightgrey;
+  width: 40%;
+}
+.box-floating img{
+  width: 50px;
+  border-radius: 20px 0 0 0;
+}
+.box-floating h3{
+  display: inline-block;
+}
+.text-box{
+  padding: 30px;
+  text-align: center;
+}
+.text-box h3, .text-box p{
+  margin-bottom: 40px;
+}
+.text-box a{
+  color: #79b27b;
+  padding: 10px;
+  border: 1px solid  #79b27b;
+  border-radius: 50px;
+}
+.flex-right{
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+a{
+  text-decoration: none;
+}
