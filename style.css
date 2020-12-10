@@ -42,8 +42,13 @@
   margin-right: 15px;
   font-weight: bold;
 }
-.nav-list a{
+#nav-anchor{
     color: white;
+    
+}
+#nav-anchor:hover{
+  border-bottom: 3px solid #79b27b;
+  color: #79b27b;
 }
 .forms{
   display: flex;
@@ -289,9 +294,62 @@
 .newsletter p{
   margin-top: 20px;
 }
+footer ul{
+  list-style: none;
+}
+.top-footer{
+  background-image: url("img/footer-background-color.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+}
+.top-footer img{
+  margin-bottom: 30px;
+}
+.top-footer h4, .top-footer i{
+  color: white;
+}
+.top-footer p, .top-footer li{
+  color: lightgrey;
+}
+.top-footer li{
+  margin-top: 10px;
+}
+.top-footer i{
+  padding-right: 10px;
+}
+.courses li{
+  color: #79b27b;
+}
+.courses i{
+  color: #79b27b;
+}
+.top-footer .bottone{
+  padding: 10px;
+}
+.bottom-footer{
+  padding: 30px 0;
+  background-color: #040b11;
+}
+.bottom-footer i{
+  color: white;
+}
+.bottom-footer p{
+  color: lightgrey;
+}
+.bottom-footer span{
+  color: #79b27b;
+}
 a{
   text-decoration: none;
+  color: #79b27b;
+  background-color: white;
+  border: 1px solid #79b27b;
+  border-radius: 50px;
 }
 a:hover{
   text-decoration: none;
+  color: white;
+  background-color: #79b27b;
+  border: 1px solid white;
 }

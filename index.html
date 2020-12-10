@@ -34,7 +34,7 @@
           <div class="container container-nav">
             <img src="img/avada-drivers-logo-2x.png" alt="">
             <ul class="nav-list">
-              <li v-for="item in items"><a href="item.link">
+              <li v-for="item in items"><a href="item.link" id="nav-anchor">
                 {{ item.text }}</a></li>
               </ul>
               <div class="button">BOOK NOW</div>
@@ -199,8 +199,7 @@
                 <p>{{ profiles[index].name }}</p>
               </template>
               <ul class="dots">
-              <li v-for="(el, i) in profiles"><i class="far fa-circle" @click="index = i" :class="{full : (i == index)}"></i></li>
-
+                <li v-for="(el, i) in profiles"><i class="far fa-circle" @click="index = i" :class="{full : (i == index)}"></i></li>
               </ul>
             </div>
 
@@ -243,10 +242,53 @@
           </div>
         </section>
       </main>
-
-
-
-
+      <footer>
+        <div class="top-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3">
+                <img src="img/avada-drivers-logo-2x-200x39.png" alt="">
+                <p>Avada Driving School is the right choice for experienced drivers looking for a refresher course, or the brand new driver wanting to pass firts time.</p>
+              </div>
+              <div class="col-lg-3">
+                <ul>
+                  <h4>CONTACT DETAILS</h4>
+                  <li><i class="fas fa-home"></i> 12345 North main Street, New York, NY 555555
+                  </li>
+                  <li><i class="fas fa-phone"></i> 1.800.555.6789</li>
+                  <li><i class="far fa-envelope"></i> info@your-domain.com</li>
+                  <li><i class="fas fa-link"></i> Theme-fusion.com</li>
+                </ul>
+              </div>
+              <div class="col-lg-3">
+                <ul class="courses">
+                  <h4>COURSES</h4>
+                  <li><i class="far fa-arrow-alt-circle-right"></i>Pass Plus</li>
+                  <li><i class="far fa-arrow-alt-circle-right"></i>Intensive Course</li>
+                  <li><i class="far fa-arrow-alt-circle-right"></i>Automatic</li>
+                  <li><i class="far fa-arrow-alt-circle-right"></i>Instructor Training</li>
+                </ul>
+              </div>
+              <div class="col-lg-3">
+                <img src="img/footer-ad-grid-200x178.png" alt="">
+                <br>
+                <a href="#" class="bottone">BOOK NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-footer">
+          <div class="container flex-between">
+            <p>&copy;	Copyright 2012-2020 | Avada Theme by <span>The Fusion</span> | All Rights Reserved | Powered by <span>WordPress</span></p>
+            <ul class="social-list">
+              <li><i class="fab fa-facebook-f"></i></li>
+              <li><i class="fab fa-twitter"></i></li>
+              <li><i class="fab fa-youtube"></i></li>
+              <li><i class="fab fa-instagram"></i></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </div>
 
 
