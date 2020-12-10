@@ -13,8 +13,6 @@
   <link rel="stylesheet" href="style.css">
   <!-- vue -->
   <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-  <!-- data script -->
-  <script src="js/data.js" charset="utf-8"></script>
   <title>Driving</title>
 </head>
 <body>
@@ -35,15 +33,20 @@
         <div class="nav">
           <div class="container container-nav">
             <img src="img/avada-drivers-logo-2x.png" alt="">
-            <div class="button">BOOK NOW</div>
+            <ul class="nav-list">
+              <li v-for="item in items"><a href="item.link">
+                {{ item.text }}</a></li>
+              </ul>
+              <div class="button">BOOK NOW</div>
+            </div>
           </div>
-        </div>
-        <div class="container presentation">
-          <h1>DRIVE WITH AVADA</h1>
-          <p>We offer the finest driving tuition money can buy</p>
+          <div class="container presentation">
+            <h1>DRIVE WITH AVADA</h1>
+            <p>We offer the finest driving tuition money can buy</p>
 
-        </div>
-      </section>
+          </div>
+        </section>
+      </header>
       <main>
         <section>
           <div class="container forms">
@@ -187,20 +190,20 @@
 
             <h2>Testimonials</h2>
             <p>Here's what our happy drivers had to say about our services</p>
-            <!-- <template id="testimonial"> -->
+
             <div class="text-center">
-              <img src="img/testimonial-sophia.png" alt="">
-              <p>Avada driving School really helped build my confidence behind the wheel and with driving in general, and they got a first time pass! Highly recommended</p>
-              <p>Sophia Jones</p>
-              <div class="dots">
-                <i class="far fa-circle"></i>
-                <i class="far fa-circle"></i>
-                <i class="far fa-circle"></i>
-                <i class="far fa-circle"></i>
-                <i class="far fa-circle"></i>
-              </div>
+
+              <template id="testimonial">
+                <img :src="profiles[index].img" alt="">
+                <p>{{ profiles[index].text }}</p>
+                <p>{{ profiles[index].name }}</p>
+              </template>
+              <ul class="dots">
+              <li v-for="(el, i) in profiles"><i class="far fa-circle" @click="index = i" :class="{full : (i == index)}"></i></li>
+
+              </ul>
             </div>
-            <!-- </template> -->
+
           </section>
           <section class="news">
             <div class="container new-cars">
@@ -243,11 +246,11 @@
 
 
 
-    </header>
-  </div>
+
+    </div>
 
 
-  <!-- main script -->
-  <script src="js/main.js" charset="utf-8"></script>
-</body>
-</html>
+    <!-- main script -->
+    <script src="main.js" charset="utf-8"></script>
+  </body>
+  </html>
