@@ -43,8 +43,7 @@
   font-weight: bold;
 }
 #nav-anchor{
-    color: white;
-    
+  color: white;
 }
 #nav-anchor:hover{
   border-bottom: 3px solid #79b27b;
@@ -94,6 +93,12 @@
   background-position: center;
   height: 400px;
 }
+.little-boxes{
+  margin-left: 500px;
+}
+.parent{
+  position: relative;
+}
 .small-box{
   margin-left: 25px;
   text-align: center;
@@ -105,9 +110,7 @@
   height: 150px;
 }
 .small-box a{
-  color: #79b27b;
   padding: 10px;
-  border: 1px solid  #79b27b;
   border-radius: 50px;
 }
 .box-floating{
@@ -134,9 +137,7 @@
   margin-bottom: 40px;
 }
 .text-box a{
-  color: #79b27b;
   padding: 10px;
-  border: 1px solid  #79b27b;
   border-radius: 50px;
 }
 .flex-right{
@@ -196,9 +197,6 @@
 
 .instructors a{
   padding: 20px;
-  color: #79b27b;
-  background-color: white;
-  border: 1px solid #79b27b;
   border-radius: 50px;
 }
 .card-instructors{
@@ -257,9 +255,6 @@
 }
 .box-news a{
   padding: 20px;
-  color: #79b27b;
-  background-color: white;
-  border: 1px solid #79b27b;
   border-radius: 50px;
 }
 .cars{
@@ -267,7 +262,7 @@
 }
 .definition-border{
   width: 100%;
-  margin: 58px auto;
+  margin: 15px auto;
 }
 .newsletter{
   background-image: url("img/newsletter_background.jpg");
@@ -309,8 +304,14 @@ footer ul{
 .top-footer h4, .top-footer i{
   color: white;
 }
-.top-footer p, .top-footer li{
+.top-footer p{
   color: lightgrey;
+}
+.detail li a{
+  color: lightgrey;
+}
+.top-footer a{
+  color: #79b27b;
 }
 .top-footer li{
   margin-top: 10px;
@@ -318,13 +319,13 @@ footer ul{
 .top-footer i{
   padding-right: 10px;
 }
-.courses li{
+.courses a{
   color: #79b27b;
 }
 .courses i{
   color: #79b27b;
 }
-.top-footer .bottone{
+.top-footer .button{
   padding: 10px;
 }
 .bottom-footer{
@@ -337,19 +338,22 @@ footer ul{
 .bottom-footer p{
   color: lightgrey;
 }
-.bottom-footer span{
+.bottom-footer span a{
   color: #79b27b;
 }
-a{
-  text-decoration: none;
+.button{
   color: #79b27b;
   background-color: white;
   border: 1px solid #79b27b;
-  border-radius: 50px;
+}
+.button:hover{
+  color: white;
+  background-color: #79b27b;
+  border: 1px solid #79b27b;
+}
+a{
+  text-decoration: none;
 }
 a:hover{
   text-decoration: none;
-  color: white;
-  background-color: #79b27b;
-  border: 1px solid white;
 }

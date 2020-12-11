@@ -37,13 +37,12 @@
               <li v-for="item in items"><a href="item.link" id="nav-anchor">
                 {{ item.text }}</a></li>
               </ul>
-              <div class="button">BOOK NOW</div>
+              <a href="#" class="button">BOOK NOW</a>
             </div>
           </div>
           <div class="container presentation">
             <h1>DRIVE WITH AVADA</h1>
             <p>We offer the finest driving tuition money can buy</p>
-
           </div>
         </section>
       </header>
@@ -87,31 +86,31 @@
         </section>
         <section class="central">
           <section class="boxing">
-            <div class="container flex-right">
+            <div class="container parent">
               <div class="box-floating">
                 <img src="img/new-corner.jpg" alt="">
                 <div class="text-box">
                   <h3>Courses</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <a href="#">COURSE INFORMATION</a>
+                  <a href="#" class="button">COURSE INFORMATION</a>
                 </div>
               </div>
 
               <div class="little-boxes">
                 <div class="small-box">
-                  <img src="img/courses-passplus-200x200.jpg" alt="">
+                  <img src="img/courses-passplus-400x399.jpg" alt="">
                   <p>Pass Plus</p>
-                  <a href="#">LEARN MORE</a>
+                  <a href="#" class="button">LEARN MORE</a>
                 </div>
                 <div class="small-box">
                   <img src="img/course-intensive-200x200.jpg" alt="">
                   <p>Intensive Course</p>
-                  <a href="#">LEARN MORE</a>
+                  <a href="#" class="button">LEARN MORE</a>
                 </div>
                 <div class="small-box">
                   <img src="img/courses-instructor-200x200.jpg" alt="">
                   <p>Instructors</p>
-                  <a href="#">LEARN MORE</a>
+                  <a href="#" class="button">LEARN MORE</a>
                 </div>
               </div>
             </div>
@@ -144,7 +143,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
               </div>
 
-              <a href="#">MORE ABOUT US</a>
+              <a href="#" class="button">MORE ABOUT US</a>
             </div>
 
             <div class="card-instructors flex-center">
@@ -223,7 +222,7 @@
                   </div>
                 </div>
                 <div class="text-center">
-                  <a href="#">MORE FROM THE BLOG</a>
+                  <a href="#" class="button">MORE FROM THE BLOG</a>
 
                   <img src="img/latestnews-bottom-1200x105.png" alt="" class="definition-border">
                 </div>
@@ -237,7 +236,7 @@
             <h2>Sign Up to Our Newsletter</h2>
             <input type="text" name="" value="">
             <br>
-            <a href="#">SUBSCRIBE</a>
+            <a href="#" class="button">SUBSCRIBE</a>
             <p>(We don't share your data with anybody, and only use it for its intended purpose)</p>
           </div>
         </section>
@@ -251,40 +250,37 @@
                 <p>Avada Driving School is the right choice for experienced drivers looking for a refresher course, or the brand new driver wanting to pass firts time.</p>
               </div>
               <div class="col-lg-3">
-                <ul>
+                <ul class="detail">
                   <h4>CONTACT DETAILS</h4>
-                  <li><i class="fas fa-home"></i> 12345 North main Street, New York, NY 555555
-                  </li>
-                  <li><i class="fas fa-phone"></i> 1.800.555.6789</li>
-                  <li><i class="far fa-envelope"></i> info@your-domain.com</li>
-                  <li><i class="fas fa-link"></i> Theme-fusion.com</li>
+                  <li v-for="detail in details">
+                    <i :class="detail.icon"></i>
+                    <a href="detail.link">{{detail.text}}</a>
+                    </li>
                 </ul>
               </div>
               <div class="col-lg-3">
                 <ul class="courses">
                   <h4>COURSES</h4>
-                  <li><i class="far fa-arrow-alt-circle-right"></i>Pass Plus</li>
-                  <li><i class="far fa-arrow-alt-circle-right"></i>Intensive Course</li>
-                  <li><i class="far fa-arrow-alt-circle-right"></i>Automatic</li>
-                  <li><i class="far fa-arrow-alt-circle-right"></i>Instructor Training</li>
+                  <li v-for="course in courses">
+                    <i :class="course.icon"></i>
+                    <a href="course.link">{{ course.text }}</a>
+                  </li>
                 </ul>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-3 text-center">
                 <img src="img/footer-ad-grid-200x178.png" alt="">
                 <br>
-                <a href="#" class="bottone">BOOK NOW</a>
+                <a href="#" class="button">BOOK NOW</a>
               </div>
             </div>
           </div>
         </div>
         <div class="bottom-footer">
           <div class="container flex-between">
-            <p>&copy;	Copyright 2012-2020 | Avada Theme by <span>The Fusion</span> | All Rights Reserved | Powered by <span>WordPress</span></p>
+            <p>&copy;	Copyright 2012-2020 | Avada Theme by <span><a href="#">The Fusion</a></span> | All Rights Reserved | Powered by <span><a href="#">WordPress</a></span></p>
             <ul class="social-list">
-              <li><i class="fab fa-facebook-f"></i></li>
-              <li><i class="fab fa-twitter"></i></li>
-              <li><i class="fab fa-youtube"></i></li>
-              <li><i class="fab fa-instagram"></i></li>
+              <li v-for="social in socials"><a href="social.link"><i :class="social.icon"></i> </a>
+              </li>
             </ul>
           </div>
         </div>

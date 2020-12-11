@@ -55,24 +55,86 @@ const mySite = new Vue({
       },
     ],
     index: 0,
+    details: [
+      {
+        icon: 'fas fa-home',
+        text: '12345 North main Street, New York, NY 555555',
+        link: '#',
+      },
+      {
+        icon: 'fas fa-phone',
+        text: '1.800.555.6789',
+        link: '#',
+      },
+      {
+        icon: 'far fa-envelope',
+        text: 'info@your-domain.com',
+        link: '#',
+      },
+      {
+        icon: 'fas fa-link',
+        text: 'Theme-fusion.com',
+        link: '#',
+      }
+    ],
+    courses: [
+      {
+        icon: 'far fa-arrow-alt-circle-right',
+        text: 'Pass Plus',
+        link: '#',
+      },
+      {
+        icon: 'far fa-arrow-alt-circle-right',
+        text: 'Intensive Course',
+        link: '#',
+      },
+      {
+        icon: 'far fa-arrow-alt-circle-right',
+        text: 'Automatic',
+        link: '#',
+      },
+      {
+        icon: 'far fa-arrow-alt-circle-right',
+        text: 'Instructor Training',
+        link: '#',
+      }
+    ],
+    socials: [
+      {
+        icon: 'fab fa-facebook-f',
+        link: '#',
+      },
+      {
+        icon: 'fab fa-twitter',
+        link: '#',
+      },
+      {
+        icon: 'fab fa-youtube',
+        link: '#',
+      },
+      {
+        icon: 'fab fa-instagram',
+        link: '#',
+      }
+    ]
   },
   methods: {
-  prev: function() {
+    prev: function() {
 
-    if(this.index === 0){
-      this.index = this.profiles.length -1;
-    }
-    else{
-      this.index--;
-    }
-  },
-  next: function() {
-    if(this.index === this.profiles.length -1){
-      this.index = 0;
-    }
-    else{
-      this.index++;
+      if(this.index === 0){
+        this.index = this.profiles.length -1;
+      }
+      else{
+        this.index--;
+      }
+    },
+    next: function() {
+      if(this.index === this.profiles.length -1){
+        this.index = 0;
+      }
+      else{
+        this.index++;
+      }
     }
   }
-}
 })
