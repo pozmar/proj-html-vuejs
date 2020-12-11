@@ -4,7 +4,8 @@
   <!-- viewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
   <!-- font awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
   <!-- Bootstrap CSS -->
@@ -51,10 +52,11 @@
           <div class="container forms">
             <div class="description">
               <h2>Get Behing The Wheel</h2>
+              <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
             <div class="form">
-              <div class="box">
+              <div class="box text-center">
                 <h3>First Lesson Free</h3>
                 <p>When you make a block booking with us your first lesson is included free</p>
                 <label for="FormControlInputName" class="form-label"></label>
@@ -65,6 +67,7 @@
                 <input type="email" class="form-control" id="exampleFormControlInputPhone" placeholder="Telephone">
                 <label for="exampleFormControlInputLocation" class="form-label"></label>
                 <input type="email" class="form-control" id="exampleFormControlInputLocation" placeholder="Location">
+                <a href="#" class="button">REQUEST A CALLBACK</a>
               </div>
 
             </div>
@@ -75,7 +78,7 @@
             <div class="container flex-between">
               <div class="scheduling">
                 <h3>Start Learning to Drive Today</h3>
-                <p>Gie us a call to schedule your first driving lesson</p>
+                <p>Give us a call to schedule your first driving lesson</p>
               </div>
               <div class="phone">
                 <i class="fas fa-phone"></i> 1-800-555-555
@@ -100,17 +103,17 @@
                 <div class="small-box">
                   <img src="img/courses-passplus-400x399.jpg" alt="">
                   <p>Pass Plus</p>
-                  <a href="#" class="button">LEARN MORE</a>
+                  <a href="#" class="bottone">LEARN MORE</a>
                 </div>
                 <div class="small-box">
                   <img src="img/course-intensive-200x200.jpg" alt="">
                   <p>Intensive Course</p>
-                  <a href="#" class="button">LEARN MORE</a>
+                  <a href="#" class="bottone">LEARN MORE</a>
                 </div>
                 <div class="small-box">
                   <img src="img/courses-instructor-200x200.jpg" alt="">
                   <p>Instructors</p>
-                  <a href="#" class="button">LEARN MORE</a>
+                  <a href="#" class="bottone">LEARN MORE</a>
                 </div>
               </div>
             </div>
@@ -153,9 +156,12 @@
                 <h4>Mike Hart</h4>
 
                 <ul class="social-list">
-                  <li><i class="fab fa-facebook-f"></i></li>
-                  <li><i class="fab fa-twitter"></i></li>
-                  <li><i class="fab fa-instagram"></i></li>
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li><a href="#"><i class="fab fa-instagram"></i></a>
+                  </li>
                 </ul>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
@@ -164,9 +170,12 @@
                 <img src="img/instructor-johnsmith-200x127.jpg" alt="">
                 <h4>John Smith</h4>
                 <ul class="social-list">
-                  <li><i class="fab fa-facebook-f"></i></li>
-                  <li><i class="fab fa-twitter"></i></li>
-                  <li><i class="fab fa-instagram"></i></li>
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li><a href="#"><i class="fab fa-instagram"></i></a>
+                  </li>
                 </ul>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
@@ -175,9 +184,12 @@
                 <img src="img/instructor-angelahart-200x127.jpg" alt="">
                 <h4>Angela Hart</h4>
                 <ul class="social-list">
-                  <li><i class="fab fa-facebook-f"></i></li>
-                  <li><i class="fab fa-twitter"></i></li>
-                  <li><i class="fab fa-instagram"></i></li>
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li><a href="#"><i class="fab fa-instagram"></i></a>
+                  </li>
                 </ul>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
@@ -186,109 +198,113 @@
 
           </section>
           <section class="testimonials text-center">
+            <div class="testimonial-template">
+              <h2>Testimonials</h2>
+              <p>Here's what our happy drivers had to say about our services</p>
 
-            <h2>Testimonials</h2>
-            <p>Here's what our happy drivers had to say about our services</p>
+              <div class="text-center">
 
-            <div class="text-center">
-
-              <template id="testimonial">
-                <img :src="profiles[index].img" alt="">
-                <p>{{ profiles[index].text }}</p>
-                <p>{{ profiles[index].name }}</p>
-              </template>
-              <ul class="dots">
-                <li v-for="(el, i) in profiles"><i class="far fa-circle" @click="index = i" :class="{full : (i == index)}"></i></li>
-              </ul>
-            </div>
-
-          </section>
-          <section class="news">
-            <div class="container new-cars">
-              <div class="box-news text-center">
-                <h2 class="py-4">Latest News</h2>
-                <div class="cars flex-center">
-                  <div class="box-one">
-                    <img src="img/blog-choosecar-320x202.jpg" alt="">
-                    <h3>What Car to Start With?</h3>
-                    <p>February 19th | 0 comments</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                  </div>
-                  <div class="box-two">
-                    <img src="img/blogpost-10and2-320x202.jpg" alt="">
-                    <h3>Avada Driving School Expanding</h3>
-                    <p>February 19th | 0 comments</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                <template id="testimonial">
+                  <img :src="profiles[index].img" alt="">
+                  <p><i>
+                    {{ profiles[index].text }}</i></p>
+                    <p><b>
+                      {{ profiles[index].name }}</b></p>
+                    </template>
+                    <ul class="dots">
+                      <li v-for="(el, i) in profiles"><i class="far fa-circle" @click="index = i" :class="{full : (i == index)}"></i></li>
+                    </ul>
                   </div>
                 </div>
-                <div class="text-center">
-                  <a href="#" class="button">MORE FROM THE BLOG</a>
+              </section>
+              <section class="news">
+                <div class="container new-cars">
+                  <div class="box-news text-center">
+                    <h2 class="py-4">Latest News</h2>
+                    <div class="cars flex-center">
+                      <div class="box-one">
+                        <img src="img/blog-choosecar-320x202.jpg" alt="">
+                        <h3>What Car to Start With?</h3>
+                        <p class="comments">February 19th |
+                          <span>0 comments</span></p>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                        </div>
+                        <div class="box-two">
+                          <img src="img/blogpost-10and2-320x202.jpg" alt="">
+                          <h3>Avada Driving School Expanding</h3>
+                          <p class="comments">February 19th | <span>0 comments</span>
+                          </p>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <a href="#" class="button">MORE FROM THE BLOG</a>
 
-                  <img src="img/latestnews-bottom-1200x105.png" alt="" class="definition-border">
+                        <img src="img/latestnews-bottom-1200x105.png" alt="" class="attached-img">
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </section>
+
+              <section class="newsletter">
+                <div class="text-center py-5">
+                  <h2>Sign up to our Newsletter</h2>
+                  <input type="text" name="" value="">
+                  <br>
+                  <a href="#" class="button">SUBSCRIBE</a>
+                  <p>(We don't share your data with anybody, and only use it for its intended purpose)</p>
+                </div>
+              </section>
+            </main>
+            <footer>
+              <div class="top-footer">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-3">
+                      <img src="img/avada-drivers-logo-2x-200x39.png" alt="">
+                      <p>Avada Driving School is the right choice for experienced drivers looking for a refresher course, or the brand new driver wanting to pass firts time.</p>
+                    </div>
+                    <div class="col-lg-3">
+                      <ul class="detail">
+                        <h5>CONTACT DETAILS</h5>
+                        <li v-for="detail in details">
+                          <i :class="detail.icon"></i>
+                          <a href="detail.link">{{detail.text}}</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3">
+                      <ul class="courses">
+                        <h5>COURSES</h5>
+                        <li v-for="course in courses">
+                          <i :class="course.icon"></i>
+                          <a href="course.link">{{ course.text }}</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-3 text-center">
+                      <img src="img/footer-ad-grid-200x178.png" alt="">
+                      <br>
+                      <a href="#" class="button">BOOK NOW</a>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </section>
-        </section>
-
-        <section class="newsletter">
-          <div class="text-center py-5">
-            <h2>Sign Up to Our Newsletter</h2>
-            <input type="text" name="" value="">
-            <br>
-            <a href="#" class="button">SUBSCRIBE</a>
-            <p>(We don't share your data with anybody, and only use it for its intended purpose)</p>
-          </div>
-        </section>
-      </main>
-      <footer>
-        <div class="top-footer">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-3">
-                <img src="img/avada-drivers-logo-2x-200x39.png" alt="">
-                <p>Avada Driving School is the right choice for experienced drivers looking for a refresher course, or the brand new driver wanting to pass firts time.</p>
-              </div>
-              <div class="col-lg-3">
-                <ul class="detail">
-                  <h4>CONTACT DETAILS</h4>
-                  <li v-for="detail in details">
-                    <i :class="detail.icon"></i>
-                    <a href="detail.link">{{detail.text}}</a>
+              <div class="bottom-footer">
+                <div class="container flex-between">
+                  <p>&copy;	Copyright 2012-2020 | Avada Theme by <span><a href="#">The Fusion</a></span> | All Rights Reserved | Powered by <span><a href="#">WordPress</a></span></p>
+                  <ul class="social-list">
+                    <li v-for="social in socials"><a href="social.link"><i :class="social.icon"></i> </a>
                     </li>
-                </ul>
+                  </ul>
+                </div>
               </div>
-              <div class="col-lg-3">
-                <ul class="courses">
-                  <h4>COURSES</h4>
-                  <li v-for="course in courses">
-                    <i :class="course.icon"></i>
-                    <a href="course.link">{{ course.text }}</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-lg-3 text-center">
-                <img src="img/footer-ad-grid-200x178.png" alt="">
-                <br>
-                <a href="#" class="button">BOOK NOW</a>
-              </div>
-            </div>
+            </footer>
           </div>
-        </div>
-        <div class="bottom-footer">
-          <div class="container flex-between">
-            <p>&copy;	Copyright 2012-2020 | Avada Theme by <span><a href="#">The Fusion</a></span> | All Rights Reserved | Powered by <span><a href="#">WordPress</a></span></p>
-            <ul class="social-list">
-              <li v-for="social in socials"><a href="social.link"><i :class="social.icon"></i> </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </footer>
-    </div>
 
 
-    <!-- main script -->
-    <script src="main.js" charset="utf-8"></script>
-  </body>
-  </html>
+          <!-- main script -->
+          <script src="main.js" charset="utf-8"></script>
+        </body>
+        </html>

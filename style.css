@@ -1,3 +1,8 @@
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
 .first{
   background-color: #484848;
 }
@@ -53,12 +58,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 100px 0;
+  padding: 100px 0 50px 0;
   position: relative;
 }
 .description{
   width: 50%;
   margin-right: 10px;
+  line-height: 30px;
+}
+.description h5, .description p{
+  color: lightgrey;
+  margin-top: 30px;
+}
+.description h2{
+  color: black;
 }
 .form{
   width: 50%;
@@ -71,11 +84,23 @@
   border-radius: 20px;
   box-shadow: 1px 12px 12px 1px lightgrey;
 }
+.box h3{
+  color: #79b27b;
+}
+.box p{
+  color: lightgrey;
+  margin-top: 30px;
+}
+.box .button{
+  padding: 10px;
+  margin-top: 20px;
+}
 .phone-number{
   height: 100px;
   background-image: url("img/horizontal-cta-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 20px 0;
 }
 .flex-center{
   display: flex;
@@ -113,6 +138,9 @@
   padding: 10px;
   border-radius: 50px;
 }
+.small-box p{
+color: #7f9ea8;
+}
 .box-floating{
   position: absolute;
   top: -5%;
@@ -122,6 +150,16 @@
   box-shadow: 1px 12px 12px 1px lightgrey;
   width: 40%;
 }
+.little-boxes .bottone{
+  color: #7f9ea8;
+  background-color: white;
+  border: 3px solid #7f9ea8;
+}
+.little-boxes .bottone:hover{
+  color: white;
+  background-color: #7f9ea8;
+  border: 1px solid #7f9ea8;
+}
 .box-floating img{
   width: 50px;
   border-radius: 20px 0 0 0;
@@ -130,11 +168,14 @@
   display: inline-block;
 }
 .text-box{
-  padding: 30px;
+  padding: 0 20px 30px 20px;
   text-align: center;
 }
 .text-box h3, .text-box p{
   margin-bottom: 40px;
+}
+.text-box p{
+  color: lightgrey;
 }
 .text-box a{
   padding: 10px;
@@ -186,6 +227,12 @@
 .text-ins{
   display: inline-block;
 }
+.text-ins h2{
+  color: #040b11;
+}
+.text-ins p{
+  color: lightgrey;
+}
 .social-list{
   list-style: none;
   display: flex;
@@ -194,7 +241,6 @@
   width: 100px;
   padding: 0;
 }
-
 .instructors a{
   padding: 20px;
   border-radius: 50px;
@@ -206,17 +252,38 @@
   left: 50%;
   transform: translate(-50%, +10%);
 }
+.card-instructors .card h4{
+  color:  #040b11;
+  margin-top: 20px;
+}
+.card-instructors .card:hover img{
+  box-shadow: 2px 2px 12px 5px lightgrey;
+  cursor: pointer;
+}
+.social-list li a{
+  padding: 0;
+  border-radius: 0;
+  color: lightgrey;
+}
 .testimonials{
   background-image: url("img/testimonial-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
+.testimonial-template{
+  width: 60%;
+  margin: 0 auto;
+}
 .testimonials h2{
   padding-top: 100px;
+}
+.testimonials p{
+  color: grey;
 }
 .testimonials img{
   width: 150px;
   height: 150px;
+  margin: 30px 0;
 }
 .dots i:hover{
   cursor: pointer;
@@ -225,13 +292,15 @@
   padding-bottom: 100px;
   padding-left: 0;
   margin: 0;
+
 }
 .dots li{
   display: inline-block;
   margin-left: 10px;
+  color: grey;
 }
 .full{
-  background-color: black;
+  background-color: grey;
   border-radius: 10px;
 }
 .news{
@@ -256,13 +325,26 @@
 .box-news a{
   padding: 20px;
   border-radius: 50px;
+  margin-top: 30px;
 }
-.cars{
-  padding-bottom: 50px;
+.cars p{
+  width: 90%;
+  margin: 0 auto;
+  color: lightgrey;
+  margin-top: 20px;
 }
-.definition-border{
+.cars h3{
+  color: #79b27b;
+  margin-top: 20px;
+}
+.cars .comments{
+  font-size: 10px;
+}
+.cars .comments span{
+  color: #79b27b;
+}
+.attached-img{
   width: 100%;
-  margin: 15px auto;
 }
 .newsletter{
   background-image: url("img/newsletter_background.jpg");
@@ -287,7 +369,8 @@
   border-radius: 50px;
 }
 .newsletter p{
-  margin-top: 20px;
+  margin-top: 30px;
+  color: grey;
 }
 footer ul{
   list-style: none;
@@ -301,14 +384,20 @@ footer ul{
 .top-footer img{
   margin-bottom: 30px;
 }
-.top-footer h4, .top-footer i{
+.top-footer h5{
   color: white;
 }
-.top-footer p{
+.detail i{
   color: lightgrey;
 }
+.top-footer ul li{
+  line-height: 30px;
+}
+.top-footer p{
+  color: grey;
+}
 .detail li a{
-  color: lightgrey;
+  color: grey;
 }
 .top-footer a{
   color: #79b27b;
